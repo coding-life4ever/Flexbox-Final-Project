@@ -1,5 +1,4 @@
 body{
-    border: 6px solid green;
     margin: 0;
     padding: 0px;
     display: flex;
@@ -9,18 +8,20 @@ body{
 
 
 .header{
-    border: 6px solid rgb(0, 6, 128);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 250px;
+    padding: 20px 250px 20px 250px;
     background-color: #1F2937;
+    flex-wrap:wrap;
+    
 }
 .Header-Logo{
     display: flex;
+    flex-wrap:wrap;
+
 }
 .Header-Links{
-    border: 6px solid rgb(0, 128, 0);
     display:flex;
     gap: 10px;
     font-family: Roboto, sans-serif;
@@ -29,7 +30,7 @@ body{
 }
 img{
     border-radius: 10px;
-    box-shadow: #E5E7EB 3px 4px 10px;
+    box-shadow: #E5E7EB 0px 0px 10px;
 }
     
 
@@ -40,19 +41,22 @@ img{
 
 
 .Sub-Header{
-    border: 6px solid rgb(225, 0, 255);
     display: flex;
-    padding: 80px 250px;
+    padding: 60px 250px 80px 250px;
     justify-content: space-between;
     background-color: #1F2937;
     font-family: Roboto, sans-serif;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-sizing: border-box;
 
 }
 .Sub-Header-Text{
-    border: 7px solid rgb(0, 255, 0);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;    
+    justify-content: space-around;
+    flex: 1 1 350px;
+    gap: 15px;
 }
 .This-website-is-awesome{
     font-size: 48px;
@@ -60,23 +64,22 @@ img{
     font-weight: bold;
 }
 .This-website-is-awesome-2{
-    font-size: 16px;
+    font-size: 20px;
     color: #E5E7EB;
-    line-height: 1.3;
+    line-height: 1.4;
     padding-right:  30px
 }
 .Sub-Header-Image{
-    border: 6px solid rgb(0, 255, 255);
-    display: flex;
+    flex-shrink: 0;
 }
-button{
+.Order-Now{
     background-color: #3882F6;
     color: white;
     border-radius: 5px;
     display: flex;
     align-self: flex-start;
     width: auto;
-    font-size: 16px;
+    font-size: 23px;
     border: 2px solid white;
 }
 
@@ -93,35 +96,34 @@ button{
 
 
 .Main-Section{
-    border: 6px solid rgb(255, 127, 0);
     display: flex;
     padding: 50px 250px;
     justify-content: space-between;
     font-family: Roboto, sans-serif;
     flex-direction: column;
+    gap: 40px;
 }
 .Main-Section-Header{
-    border: 6px solid rgb(255, 0, 255);
     text-align: center;
     font-size: 36px;
     color: #1F2937;
     font-weight: bold;
 }
-.Main-Section-Content-Images{
-    border: 6px solid rgb(255, 255, 0);
+.card-container{
     display: flex;
     justify-content: space-between;
-}
-.Main-Section-Content-Text{
-    border: 6px solid rgb(0, 255, 255);
-    display: flex;
+    flex-wrap:wrap;
+    gap: 20px;
     justify-content: space-between;
 }
-.Große-Auswahl,
-.Schnelle-Lieferung,
-.Einfache-Bezahlung,
-.Exklusive-Rabatte{
-    border: 6px solid rgb(47, 0, 255);
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+.card-text{
     width: 200px;
     font-size: 18px;
     display: flex;
@@ -138,11 +140,12 @@ button{
 
 
 .Quote{
-    border: 6px solid rgb(255, 0, 0);
     display: flex;
     flex-direction: column;
     padding: 100px 250px;
     background-color: #E5E7EB;
+    gap: 10px;
+
 }
 .Quote-Text{
     font-size: 36px;
@@ -167,7 +170,6 @@ button{
 
 
 .Call-To-Action{
-    border: 6px solid rgb(0, 200, 255);
     background-color: #3882F6;
     color: white;
     margin: 100px 250px;
@@ -176,7 +178,8 @@ button{
     border-radius: 10px;
     font-family: Roboto, sans-serif;
     padding: 30px 60px;
-
+    flex-wrap:wrap;
+    gap: 10px;
 }
 .Call-To-Action-Text1{
     font-size: 18px;
@@ -190,6 +193,10 @@ button{
     border: 2px solid white;
     display: flex;
     padding: 10px 20px;
+    background-color: #3882F6;
+    color: white;
+    border-radius: 5px;
+
 }
 
 
@@ -210,7 +217,6 @@ button{
 
 
 .Footer{
-    border: 6px solid rgb(128, 0, 0);
     font-family: Roboto, sans-serif;
     background-color: #1F2937;
     color: white;
